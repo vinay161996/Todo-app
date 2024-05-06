@@ -2,11 +2,15 @@
 
 ## Tech Stack
 
-React, TailwindCSS
+React, Html, Css, JavaScript, TailwindCSS
 
 ## Installation
 
 ```bash
-  npm install
+  npm i
   npm run dev
 ```
+
+## Authors
+
+- [@rudravinay](https://github.com/vinay161996)
