@@ -11,6 +11,10 @@ React, Html, Css, JavaScript, TailwindCSS
   npm run dev
 ```
 
+## Demo
+
+Livedemo: https://rudravinay-todo-app.netlify.app/
+
 ## Authors
 
 - [@rudravinay](https://github.com/vinay161996)
