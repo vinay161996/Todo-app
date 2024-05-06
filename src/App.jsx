@@ -9,13 +9,16 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    setTasks(JSON.parse(localStorage.getItem("tasks")));
+    const getTasks = JSON.parse(localStorage.getItem("tasks"));
+    if (getTasks) {
+      setTasks(getTasks);
+    }
   }, []);
 
   return (
     <DndProvider backend={HTML5Backend}>
       <Toaster />
-      <div className="  bg-slate-100 w-screen h-screen flex flex-col items-center gap-16 pt-32">
+      <div className="w-screen h-screen flex flex-col items-center gap-16 pt-32">
         <CreateTasks tasks={tasks} setTasks={setTasks} />
         <TaskList tasks={tasks} setTasks={setTasks} />
       </div>

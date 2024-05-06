@@ -23,7 +23,7 @@ const TaskList = ({ tasks, setTasks }) => {
   const statuses = ["todo", "inprogress", "completed"];
 
   return (
-    <div className="flex gap-16">
+    <div className="flex flex-wrap gap-8 justify-center pb-16">
       {statuses.map((status, index) => (
         <Section
           key={index}
